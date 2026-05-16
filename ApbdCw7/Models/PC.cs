@@ -18,6 +18,7 @@ public class PC
     public int Warranty { get; set; }
 
     [Required]
+    [Column(TypeName = "datetime")] 
     public DateTime CreatedAt { get; set; }
 
     [Required]

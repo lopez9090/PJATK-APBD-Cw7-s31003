@@ -16,6 +16,7 @@ public class ComponentManufacturer
     public string FullName { get; set; } = string.Empty;
 
     [Required]
+    [Column(TypeName = "date")] 
     public DateTime FoundationDate { get; set; }
     
     public ICollection<Component> Components { get; set; } = new List<Component>();
