@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ApbdCw7.Models;
 
@@ -18,7 +19,7 @@ public class PC
     public int Warranty { get; set; }
 
     [Required]
-    [Column(TypeName = "datetime")] 
+    [Column(TypeName = "datetime")]
     public DateTime CreatedAt { get; set; }
 
     [Required]
